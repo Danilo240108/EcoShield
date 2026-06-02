@@ -19,3 +19,27 @@ main{
     margin: 0 auto;
     padding: 50px 0 70px;
 }
+
+nav{
+    background: #2d2d2d;
+    border-bottom: 1px solid #3b3b3b;
+    padding: 18px 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: #43b043;
+}
