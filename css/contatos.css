@@ -1,0 +1,41 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte */
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #050505;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+nav{
+    background: #2d2d2d;
+    border-bottom: 1px solid #3b3b3b;
+    padding: 18px 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #5dc54b;
+}
