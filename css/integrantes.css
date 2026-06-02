@@ -43,3 +43,28 @@ nav a{
 nav a:hover{
     color: #43b043;
 }
+
+#integrantes{
+    text-align: center;
+}
+
+#integrantes h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+#integrantes h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2ca62c;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+#integrantes > p{
+    margin-top: 25px;
+    color: #cfcfcf;
+    font-size: 1.05rem;
+}
