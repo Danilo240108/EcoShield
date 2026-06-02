@@ -150,3 +150,50 @@ nav a:hover{
     background: #43b043;
     border-color: #43b043;
 }
+
+footer{
+    margin-top: auto;
+
+    border-top: 1px solid #2f2f2f;
+
+    text-align: center;
+    padding: 20px;
+
+    color: #cfcfcf;
+    background: #0a0a0a;
+
+    font-size: .9rem;
+}
+
+@media (max-width: 900px){
+
+    #integrantes h1{
+        font-size: 2.5rem;
+    }
+
+    .equipe{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    nav ul{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #integrantes h1{
+        font-size: 2rem;
+    }
+
+    .card-integrante img{
+        height: 260px;
+    }
+
+    .links{
+        flex-direction: column;
+    }
+
+}
