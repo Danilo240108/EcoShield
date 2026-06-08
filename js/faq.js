@@ -4,7 +4,14 @@ perguntas.forEach(function(pergunta){
 
     pergunta.addEventListener('click', function(){
 
-        console.log('Pergunta clicada');
+        var resposta = pergunta.nextElementSibling;
+
+        if(resposta.style.display === "block"){
+            resposta.style.display = "none";
+        }
+        else{
+            resposta.style.display = "block";
+        }
 
     });
 
