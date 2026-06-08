@@ -1,3 +1,11 @@
 var perguntas = document.querySelectorAll('.faq-question');
 
-console.log('FAQ carregado');
+perguntas.forEach(function(pergunta){
+
+    pergunta.addEventListener('click', function(){
+
+        console.log('Pergunta clicada');
+
+    });
+
+});
