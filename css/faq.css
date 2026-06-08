@@ -134,10 +134,19 @@ footer{
 .faq-answer{
     display: none;
 }
+
 .faq-question{
     transition: 0.3s;
 }
 
 .faq-question:hover{
     color: #5dc54b;
+}
+
+.faq-item{
+    transition: 0.3s;
+}
+
+.faq-item:hover{
+    transform: translateY(-3px);
 }
