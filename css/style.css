@@ -1,6 +1,5 @@
-/* 
-   ECOSHIELD — style.css
-*/
+
+  */ ECOSHIELD — style.css*/
 
 /* ── Variáveis ── */
 :root {
@@ -27,9 +26,9 @@ body {
   overflow-x: hidden;
 }
 
-/* 
-   BACKGROUND
-*/
+
+   */BACKGROUND*/
+
 .bg-grid {
   position:fixed; inset:0; z-index:0; pointer-events:none;
   background-image:
@@ -52,10 +51,10 @@ body {
 @keyframes orbFloat2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-50px,-30px)} }
 @keyframes orbFloat3 { 0%,100%{transform:translate(-50%,-50%) scale(1)} 50%{transform:translate(-50%,-50%) scale(1.3)} }
 
-/* 
-   NAVEGAÇÃO
- */
-nav {
+
+  */ NAVEGAÇÃO*/
+
+  nav {
   position:fixed; top:0; left:0; right:0; z-index:100;
   padding:16px 40px;
   display:flex; align-items:center; justify-content:space-between;
@@ -129,10 +128,10 @@ nav {
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
 
-/* 
-   HERO
- */
- .hero {
+ 
+   */HERO*/
+ 
+   .hero {
   position:relative; z-index:1;
   min-height:100vh;
   display:flex; align-items:center; justify-content:center;
@@ -175,6 +174,7 @@ nav {
 }
 
 /* Radar */
+
 .hero-radar {
   position:absolute; right:8%; top:50%; transform:translateY(-50%);
   width:280px; height:280px; opacity:.15;
@@ -194,9 +194,8 @@ nav {
 }
 @keyframes sweep { to { transform:rotate(360deg); } }
 
-/* 
-   BOTÕES
-*/
+
+  */ BOTÕES*/
 
 .btn-primary {
   background:linear-gradient(135deg, var(--green), var(--green2));
@@ -218,12 +217,11 @@ nav {
 }
 .btn-secondary:hover { background:rgba(0,229,255,.08); border-color:var(--teal); transform:translateY(-2px); }
 
-/* 
 
-   TICKER
- */
 
- .ticker {
+   */TICKER*/
+ 
+   .ticker {
   position:relative; z-index:1;
   background:rgba(255,59,59,.06);
   border-top:1px solid rgba(255,59,59,.15);
@@ -242,9 +240,10 @@ nav {
 .ticker-dot { width:6px; height:6px; border-radius:50%; background:var(--red); animation:blink 1s infinite; }
 @keyframes tickerRoll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
-/* 
-   STATS BAR
+
+ */  STATS BAR
 */
+
 .stats-bar {
   position:relative; z-index:1;
   background:rgba(0,255,136,.04);
@@ -262,10 +261,8 @@ nav {
 .stat-val.teal   { color:var(--teal); }
 .stat-lbl { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-top:6px; display:block; }
 
-/* 
 
-   SEÇÕES
- */
+  /*  SEÇÕES*/
 
  section { position:relative; z-index:1; padding:100px 40px; }
 
@@ -285,6 +282,7 @@ nav {
 .section-desc { font-size:16px; font-weight:300; color:var(--text); opacity:.7; line-height:1.8; max-width:560px; margin-bottom:60px; }
 
 /* ── STEPS ── */
+
 .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
 
 .step-card {
@@ -306,6 +304,7 @@ nav {
 .step-desc  { font-size:14px; font-weight:300; color:var(--text); opacity:.7; line-height:1.7; }
 
 /* ── ALERTAS ── */
+
 .alerts-section { background:var(--bg2); }
 .alerts-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
 
@@ -329,6 +328,7 @@ nav {
 .alert-meta  { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); font-family:'Orbitron',monospace; letter-spacing:1px; }
 
 /* ── MAPA ── */
+
 .monitor-layout { display:grid; grid-template-columns:1fr 380px; gap:40px; align-items:center; }
 
 .monitor-map {
@@ -369,6 +369,7 @@ nav {
 .info-item-text span   { font-size:12px; color:var(--muted); }
 
 /* ── TECNOLOGIAS ── */
+
 .tech-section { background:var(--bg2); }
 .tech-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:16px; }
 .tech-card { background:rgba(0,255,136,.03); border:1px solid var(--border); border-radius:4px; padding:28px 20px; text-align:center; transition:all .3s; }
@@ -378,6 +379,7 @@ nav {
 .tech-desc { font-size:12px; color:var(--muted); line-height:1.6; }
 
 /* ── PÁGINAS RÁPIDAS (cards de navegação) ── */
+
 .pages-section { background:var(--bg2); }
 .pages-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
 
@@ -415,6 +417,7 @@ nav {
 .cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
 
 /* ── FOOTER ── */
+
 footer {
   position:relative; z-index:1;
   border-top:1px solid var(--border);
@@ -430,11 +433,11 @@ footer {
 .footer-links a:hover { color:var(--green); }
 
 /* ── SCROLL REVEAL ── */
+
 .reveal { opacity:0; transform:translateY(40px); transition:opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity:1; transform:translateY(0); }
-/* 
-   RESPONSIVO
-*/
+
+ /* RESPONSIVO*/
 
 @media (max-width:900px) {
   nav { padding:14px 20px; }
