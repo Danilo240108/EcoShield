@@ -1,0 +1,32 @@
+/* 
+   ECOSHIELD — style.css
+*/
+
+/* ── Variáveis ── */
+:root {
+  --bg:     #030d0a;
+  --bg2:    #061510;
+  --green:  #00ff88;
+  --green2: #00cc66;
+  --teal:   #00e5ff;
+  --yellow: #ffcc00;
+  --red:    #ff3b3b;
+  --text:   #c8e6d0;
+  --muted:  #4a7a5a;
+  --border: rgba(0,255,136,.12);
+  --glow:   0 0 20px rgba(0,255,136,.3);
+}
+
+/* ── Reset ── */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Exo 2', sans-serif;
+  overflow-x: hidden;
+}
+
+/* 
+   BACKGROUND
+*/

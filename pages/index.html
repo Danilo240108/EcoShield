@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoShield - Home</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoShield — Monitoramento Climático e Prevenção de Desastres</title>
+  <meta name="description" content="EcoShield: sistema de monitoramento climático e alertas para prevenção de desastres naturais no Brasil.">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <nav>
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="integrantes.html">Integrantes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-</nav>
 
-</body>
-</html>
+  <!-- Fundo -->
+  <div class="bg-grid"></div>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+
+  
+  <!-- NAVEGAÇÃO PRINCIPAL-->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🛡️</div>
+      ECOSHIELD
+    </a>
+
+    <!-- Hamburger mobile -->
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html"       class="active">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="integrantes.html">Equipe</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <div class="nav-alert">
+      <div class="dot"></div>
+      <span id="navAlertText">3 alertas ativos</span>
+    </div>
+  </nav>
+
+  <!--  HERO-->
