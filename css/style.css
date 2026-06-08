@@ -432,3 +432,37 @@ footer {
 /* ── SCROLL REVEAL ── */
 .reveal { opacity:0; transform:translateY(40px); transition:opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity:1; transform:translateY(0); }
+/* 
+   RESPONSIVO
+*/
+
+@media (max-width:900px) {
+  nav { padding:14px 20px; }
+  .nav-links {
+    display:none; flex-direction:column; gap:0;
+    position:absolute; top:100%; left:0; right:0;
+    background:rgba(3,13,10,.98); border-bottom:1px solid var(--border);
+    padding:12px 0;
+  }
+  .nav-links.open { display:flex; }
+  .nav-links a { padding:12px 24px; border-radius:0; }
+  .nav-toggle { display:flex; }
+
+  .hero { padding:100px 20px 60px; }
+  .hero-radar { display:none; }
+
+  .stats-bar { grid-template-columns:repeat(2,1fr); padding:20px; }
+
+  section { padding:70px 20px; }
+
+  .steps          { grid-template-columns:1fr; }
+  .alerts-grid    { grid-template-columns:1fr; }
+  .monitor-layout { grid-template-columns:1fr; }
+  .tech-grid      { grid-template-columns:repeat(2,1fr); }
+  .pages-grid     { grid-template-columns:1fr; }
+
+  .cta-glow { padding:32px 20px; }
+
+  footer { grid-template-columns:1fr; text-align:center; padding:24px 20px; }
+  .footer-links { justify-content:center; }
+}
