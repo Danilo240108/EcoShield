@@ -55,3 +55,26 @@ setInterval(function () {
     navAlertText.textContent = alertValues[alertIndex] + ' alertas ativos';
   }
 }, 8000);
+
+/*
+   3. CONTADORES ANIMADOS (stat1~stat4)
+*/
+var counters = [
+  { id: 'stat1', target: 2400 },
+  { id: 'stat2', target: 147  },
+  { id: 'stat3', target: 27   },
+  { id: 'stat4', target: 3200000 },
+];
+
+counters.forEach(function(c) {
+  var el = document.getElementById(c.id);
+  if (!el) return;
+  var start = 0;
+  var duration = 2000;
+  var step = c.target / (duration / 16);
+  var timer = setInterval(function() {
+    start += step;
+    if (start >= c.target) { start = c.target; clearInterval(timer); }
+    el.textContent = Math.floor(start).toLocaleString('pt-BR');
+  }, 16);
+});
