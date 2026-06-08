@@ -130,6 +130,14 @@ footer{
     border-color: #43b043;
     box-shadow: 0 0 15px rgba(67,176,67,0.2);
 }
+
 .faq-answer{
     display: none;
+}
+.faq-question{
+    transition: 0.3s;
+}
+
+.faq-question:hover{
+    color: #5dc54b;
 }
