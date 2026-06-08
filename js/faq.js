@@ -6,6 +6,14 @@ perguntas.forEach(function(pergunta){
 
         var resposta = pergunta.nextElementSibling;
 
+        document.querySelectorAll('.faq-answer').forEach(function(item){
+
+            if(item !== resposta){
+                item.style.display = "none";
+            }
+
+        });
+
         if(resposta.style.display === "block"){
             resposta.style.display = "none";
         }
