@@ -45,3 +45,13 @@ document.querySelectorAll('.reveal').forEach(function (el) {
 /*
    5. CONTADOR DE ALERTAS DINÂMICO NA NAV
  */
+  var alertValues  = [3, 4, 2, 5, 3];
+var alertIndex   = 0;
+var navAlertText = document.getElementById('navAlertText');
+
+setInterval(function () {
+  alertIndex = (alertIndex + 1) % alertValues.length;
+  if (navAlertText) {
+    navAlertText.textContent = alertValues[alertIndex] + ' alertas ativos';
+  }
+}, 8000);

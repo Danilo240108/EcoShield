@@ -75,4 +75,240 @@
 
 
    <!--TICKER DE ALERTAS -->
+   <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA VERMELHO — Enchente em São Paulo / Zona Leste</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA AMARELO — Ventos fortes no Paraná / Litoral Norte</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA VERMELHO — Deslizamento em Petrópolis / RJ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> MONITORAMENTO — Nível dos rios acima do normal em MG</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA AMARELO — Seca severa no Nordeste / Sertão</span>
+      <!-- Duplicado para loop infinito -->
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA VERMELHO — Enchente em São Paulo / Zona Leste</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA AMARELO — Ventos fortes no Paraná / Litoral Norte</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA VERMELHO — Deslizamento em Petrópolis / RJ</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> MONITORAMENTO — Nível dos rios acima do normal em MG</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ALERTA AMARELO — Seca severa no Nordeste / Sertão</span>
+    </div>
+  </div>
+
+  
+  <!-- ESTATÍSTICAS -->
+  
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-val"        id="stat1">0</span>
+      <span class="stat-lbl">Sensores Ativos</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val orange" id="stat2">0</span>
+      <span class="stat-lbl">Alertas este mês</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val red"    id="stat3">0</span>
+      <span class="stat-lbl">Regiões monitoradas</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val teal"   id="stat4">0</span>
+      <span class="stat-lbl">Pessoas protegidas</span>
+    </div>
+  </div>
+
+
+  <!--  COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="section-label">Sistema</div>
+    <h2 class="section-title reveal">Como o <span>EcoShield</span> funciona</h2>
+    <p class="section-desc reveal">Da coleta de dados ao alerta na sua tela — tudo em segundos.</p>
+
+    <div class="steps">
+      <div class="step-card reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon">🛰️</div>
+        <div class="step-title">Coleta de Dados</div>
+        <p class="step-desc">Sensores meteorológicos, satélites e estações pluviométricas coletam dados climáticos em tempo real de todo o território nacional.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">02</div>
+        <div class="step-icon">🧠</div>
+        <div class="step-title">Análise Inteligente</div>
+        <p class="step-desc">Algoritmos processam os dados e identificam padrões de risco: enchentes, deslizamentos, secas e tempestades antes que ocorram.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">03</div>
+        <div class="step-icon">🚨</div>
+        <div class="step-title">Alertas Imediatos</div>
+        <p class="step-desc">Notificações são enviadas para autoridades e comunidades com antecedência para evacuação e tomada de decisão rápida.</p>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ALERTAS -->
+  <section id="alertas" class="alerts-section">
+    <div class="section-label">Monitoramento</div>
+    <h2 class="section-title reveal">Níveis de <span>Alerta</span></h2>
+    <p class="section-desc reveal">Três níveis de classificação para resposta proporcional ao risco identificado.</p>
+
+    <div class="alerts-grid">
+      <div class="alert-card vermelho reveal">
+        <div class="alert-header">
+          <span class="alert-level">Nível Vermelho</span>
+          <span class="alert-icon">🔴</span>
+        </div>
+        <div class="alert-title">Perigo Iminente</div>
+        <p class="alert-desc">Risco extremo de desastre. Ação imediata necessária. Evacuação da área afetada é recomendada pelas autoridades.</p>
+        <div class="alert-meta"><span>3 ocorrências ativas</span><span>Atualizado: agora</span></div>
+      </div>
+
+      <div class="alert-card amarelo reveal">
+        <div class="alert-header">
+          <span class="alert-level">Nível Amarelo</span>
+          <span class="alert-icon">🟡</span>
+        </div>
+        <div class="alert-title">Atenção Elevada</div>
+        <p class="alert-desc">Risco moderado identificado. Monitoramento intensificado. Populações vulneráveis devem estar em estado de prontidão.</p>
+        <div class="alert-meta"><span>8 ocorrências ativas</span><span>Atualizado: 5min</span></div>
+      </div>
+
+      <div class="alert-card verde reveal">
+        <div class="alert-header">
+          <span class="alert-level">Nível Verde</span>
+          <span class="alert-icon">🟢</span>
+        </div>
+        <div class="alert-title">Situação Normal</div>
+        <p class="alert-desc">Condições climáticas dentro da normalidade. Sistema em monitoramento contínuo sem riscos identificados no momento.</p>
+        <div class="alert-meta"><span>Regiões estáveis</span><span>Atualizado: 2min</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  MONITORAMENTO / MAPA -->
+    <section id="monitoramento">
+    <div class="section-label">Cobertura</div>
+    <div class="monitor-layout">
+
+      <div>
+        <h2 class="section-title reveal">Cobertura <span>Nacional</span></h2>
+        <p class="section-desc reveal">Monitoramento em tempo real de todas as regiões, com foco nas áreas de maior vulnerabilidade climática.</p>
+        <ul class="info-list">
+          <li class="info-item reveal">
+            <span class="info-item-icon">📡</span>
+            <div class="info-item-text"><strong>Rede de Sensores</strong><span>+2.400 estações meteorológicas distribuídas pelo país</span></div>
+          </li>
+          <li class="info-item reveal">
+            <span class="info-item-icon">🛰️</span>
+            <div class="info-item-text"><strong>Monitoramento por Satélite</strong><span>Imagens atualizadas a cada 15 minutos via INPE</span></div>
+          </li>
+          <li class="info-item reveal">
+            <span class="info-item-icon">💧</span>
+            <div class="info-item-text"><strong>Sensores Hidrológicos</strong><span>Nível de 380 rios e reservatórios em tempo real</span></div>
+          </li>
+          <li class="info-item reveal">
+            <span class="info-item-icon">⚡</span>
+            <div class="info-item-text"><strong>Detecção de Raios</strong><span>Localização de descargas elétricas atmosféricas</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="monitor-map">
+        <div class="map-label">◉ AO VIVO — Mapa de Riscos</div>
+        <svg class="brazil-map" viewBox="0 0 400 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M180 20 L200 15 L240 25 L280 40 L310 60 L330 90 L340 130 L335 160 L320 190 L340 210 L360 240 L370 270 L360 300 L340 320 L310 340 L280 355 L260 370 L240 390 L220 410 L200 420 L180 415 L160 400 L140 385 L120 365 L100 345 L85 320 L75 295 L70 265 L75 240 L90 215 L80 190 L65 165 L60 140 L70 115 L90 90 L110 70 L135 50 L160 30 Z" stroke="rgba(0,255,136,0.4)" stroke-width="1.5" fill="rgba(0,255,136,0.04)"/>
+          <path d="M180 80 Q200 100 220 80"  stroke="rgba(0,255,136,0.15)" stroke-width="1" fill="none"/>
+          <path d="M150 150 Q190 170 230 150" stroke="rgba(0,255,136,0.15)" stroke-width="1" fill="none"/>
+          <path d="M130 220 Q180 240 230 220" stroke="rgba(0,255,136,0.15)" stroke-width="1" fill="none"/>
+          <path d="M140 290 Q185 310 230 290" stroke="rgba(0,255,136,0.15)" stroke-width="1" fill="none"/>
+        </svg>
+        <div class="map-ping p1"></div>
+        <div class="map-ping p2"></div>
+        <div class="map-ping p3"></div>
+        <div class="map-ping p4"></div>
+        <div class="map-ping p5"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+    <!--TECNOLOGIAS-->
+  <section id="tecnologia" class="tech-section">
+    <div class="section-label">Stack</div>
+    <h2 class="section-title reveal">Tecnologias <span>Utilizadas</span></h2>
+    <div class="tech-grid">
+      <div class="tech-card reveal">
+        <span class="tech-icon">🌐</span>
+        <div class="tech-name">HTML5</div>
+        <p class="tech-desc">Estrutura semântica e acessível seguindo os padrões W3C.</p>
+      </div>
+      <div class="tech-card reveal">
+        <span class="tech-icon">🎨</span>
+        <div class="tech-name">CSS3</div>
+        <p class="tech-desc">Animações, variáveis e design responsivo sem CSS inline.</p>
+      </div>
+      <div class="tech-card reveal">
+        <span class="tech-icon">⚡</span>
+        <div class="tech-name">JavaScript</div>
+        <p class="tech-desc">Interatividade e dinamismo sem dependências externas.</p>
+      </div>
+      <div class="tech-card reveal">
+        <span class="tech-icon">📱</span>
+        <div class="tech-name">Responsivo</div>
+        <p class="tech-desc">Layout adaptável para desktop, tablet e smartphone.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--NAVEGAÇÃO PARA PÁGINAS DO GRUPO -->
+  
+  <section class="pages-section">
+    <div class="section-label">Navegação</div>
+    <h2 class="section-title reveal">Explore o <span>Projeto</span></h2>
+    <p class="section-desc reveal">Acesse todas as seções do site EcoShield desenvolvidas pela equipe.</p>
+
+    <div class="pages-grid">
+      <a href="sobre.html" class="page-card reveal">
+        <span class="page-card-icon">📖</span>
+        <div class="page-card-title">Sobre o Projeto</div>
+        <div class="page-card-file">sobre.html</div>
+        <p class="page-card-desc">Propósito, problema abordado, motivação e tecnologias utilizadas no desenvolvimento do EcoShield.</p>
+      </a>
+
+      <a href="integrantes.html" class="page-card reveal">
+        <span class="page-card-icon">👥</span>
+        <div class="page-card-title">Nossa Equipe</div>
+        <div class="page-card-file">integrantes.html</div>
+        <p class="page-card-desc">Conheça os integrantes do grupo com nome, RM, turma, foto e links do GitHub e LinkedIn.</p>
+      </a>
+
+      <a href="faq.html" class="page-card reveal">
+        <span class="page-card-icon">❓</span>
+        <div class="page-card-title">Perguntas Frequentes</div>
+        <div class="page-card-file">faq.html</div>
+        <p class="page-card-desc">Respostas para as dúvidas mais comuns dos usuários sobre o sistema e suas funcionalidades.</p>
+      </a>
+
+      <a href="contato.html" class="page-card reveal">
+        <span class="page-card-icon">✉️</span>
+        <div class="page-card-title">Contato</div>
+        <div class="page-card-file">contato.html</div>
+        <p class="page-card-desc">Formulário funcional para envio de mensagens com campos de nome, e-mail e mensagem.</p>
+      </a>
+
+      <a href="#alertas" class="page-card reveal">
+        <span class="page-card-icon">🚨</span>
+        <div class="page-card-title">Alertas Ativos</div>
+        <div class="page-card-file">index.html#alertas</div>
+        <p class="page-card-desc">Visualize os alertas climáticos em tempo real classificados por nível de risco e região.</p>
+      </a>
+
+      <a href="#monitoramento" class="page-card reveal">
+        <span class="page-card-icon">🗺️</span>
+        <div class="page-card-title">Mapa de Riscos</div>
+        <div class="page-card-file">index.html#monitoramento</div>
+        <p class="page-card-desc">Mapa interativo com pontos de monitoramento e cobertura nacional dos sensores climáticos.</p>
+      </a>
+    </div>
+  </section>
    
