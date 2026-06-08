@@ -27,3 +27,21 @@ if (toggle) {
 /* 
    2. NAV ATIVO NO SCROLL
  */
+var revealObserver = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry, index) {
+    if (entry.isIntersecting) {
+      setTimeout(function () {
+        entry.target.classList.add('visible');
+      }, index * 80);
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(function (el) {
+  revealObserver.observe(el);
+});
+
+/*
+   5. CONTADOR DE ALERTAS DINÂMICO NA NAV
+ */
