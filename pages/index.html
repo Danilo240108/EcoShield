@@ -23,7 +23,7 @@
   --glow:   0 0 20px rgba(0,255,136,.3);
 }
 
-/* ── Reset ── */
+
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
@@ -412,7 +412,7 @@ footer {
 .footer-links a { font-size:12px; color:var(--muted); text-decoration:none; letter-spacing:1px; transition:color .2s; }
 .footer-links a:hover { color:var(--green); }
 
-/* ── SCROLL REVEAL ── */
+
 .reveal { opacity:0; transform:translateY(40px); transition:opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity:1; transform:translateY(0); }
 
@@ -520,7 +520,7 @@ footer {
       <span class="ticker-item"><span class="ticker-dot"></span> ALERTA VERMELHO — Deslizamento em Petrópolis / RJ</span>
       <span class="ticker-item"><span class="ticker-dot"></span> MONITORAMENTO — Nível dos rios acima do normal em MG</span>
       <span class="ticker-item"><span class="ticker-dot"></span> ALERTA AMARELO — Seca severa no Nordeste / Sertão</span>
-      <!-- Duplicado para loop infinito -->
+  
       <span class="ticker-item"><span class="ticker-dot"></span> ALERTA VERMELHO — Enchente em São Paulo / Zona Leste</span>
       <span class="ticker-item"><span class="ticker-dot"></span> ALERTA AMARELO — Ventos fortes no Paraná / Litoral Norte</span>
       <span class="ticker-item"><span class="ticker-dot"></span> ALERTA VERMELHO — Deslizamento em Petrópolis / RJ</span>
@@ -779,7 +779,7 @@ if (toggle) {
     navLinks.classList.toggle('open');
   });
 
-  /* Fecha o menu ao clicar em qualquer link */
+
   navLinks.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       toggle.classList.remove('open');
