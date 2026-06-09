@@ -4,104 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alertas - EcoShield</title>
-
+    <title>Alertas – EcoShield</title>
+    <meta name="description" content="Acompanhe regiões monitoradas e riscos ambientais identificados pelo EcoShield.">
     <link rel="stylesheet" href="../css/alertas.css">
 </head>
 
 <body>
 
-    <nav>
+    <nav aria-label="Navegação principal">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="integrantes.html">Integrantes</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a href="alertas.html">Alertas</a></li>
+            <li><a href="alertas.html" aria-current="page">Alertas</a></li>
         </ul>
     </nav>
 
     <header>
         <h1>Alertas e Áreas de Risco</h1>
-        <p>
-            Acompanhe informações sobre regiões monitoradas e possíveis riscos ambientais.
-        </p>
+        <p>Acompanhe informações sobre regiões monitoradas e possíveis riscos ambientais.</p>
     </header>
 
     <main>
 
-        <section>
-            <h2>Monitoramento Ambiental</h2>
-
-            <p>
+        <section aria-labelledby="monitoramento-titulo">
+            <h2 id="monitoramento-titulo">Monitoramento Ambiental</h2>
+            <p class="section-desc">
                 O EcoShield auxilia na identificação de áreas que podem sofrer com
                 enchentes, queimadas e outros eventos ambientais.
             </p>
         </section>
 
-        <section>
+        <section aria-labelledby="niveis-titulo">
+            <h2 id="niveis-titulo">Níveis de Alerta</h2>
 
-            <h2>Níveis de Alerta</h2>
-
-            <div class="alerta">
+            <div class="alerta" data-level="low" role="status" aria-label="Baixo risco">
                 <h3>🟢 Baixo Risco</h3>
                 <p>Nenhuma ocorrência relevante registrada.</p>
             </div>
 
-            <div class="alerta">
+            <div class="alerta" data-level="medium" role="status" aria-label="Médio risco">
                 <h3>🟡 Médio Risco</h3>
                 <p>Possibilidade de impactos ambientais moderados.</p>
             </div>
 
-            <div class="alerta">
+            <div class="alerta" data-level="high" role="alert" aria-label="Alto risco">
                 <h3>🔴 Alto Risco</h3>
                 <p>Área sujeita a enchentes, queimadas ou outros eventos críticos.</p>
             </div>
 
         </section>
 
-        <section>
+        <section aria-labelledby="areas-titulo">
+            <h2 id="areas-titulo">Áreas Monitoradas</h2>
 
-            <h2>Áreas Monitoradas</h2>
-
-            <table>
-
-                <tr>
-                    <th>Região</th>
-                    <th>Situação</th>
-                    <th>Nível</th>
-                </tr>
-
-                <tr>
-                    <td>Zona Norte</td>
-                    <td>Monitorada</td>
-                    <td>Baixo</td>
-                </tr>
-
-                <tr>
-                    <td>Zona Sul</td>
-                    <td>Atenção</td>
-                    <td>Médio</td>
-                </tr>
-
-                <tr>
-                    <td>Zona Leste</td>
-                    <td>Alerta</td>
-                    <td>Alto</td>
-                </tr>
-
-            </table>
+            <div class="table-wrapper">
+                <table aria-label="Tabela de áreas monitoradas">
+                    <thead>
+                        <tr>
+                            <th scope="col">Região</th>
+                            <th scope="col">Situação</th>
+                            <th scope="col">Nível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zona Norte</td>
+                            <td>Monitorada</td>
+                            <td>Baixo</td>
+                        </tr>
+                        <tr>
+                            <td>Zona Sul</td>
+                            <td>Atenção</td>
+                            <td>Médio</td>
+                        </tr>
+                        <tr>
+                            <td>Zona Leste</td>
+                            <td>Alerta</td>
+                            <td>Alto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </section>
 
     </main>
 
     <footer>
-        <p>
-            EcoShield © 2026 | Global Solution - FIAP | ADS | Front-End Design
-        </p>
+        <p>EcoShield &copy; 2026 &nbsp;|&nbsp; Global Solution – FIAP &nbsp;|&nbsp; ADS &nbsp;|&nbsp; Front-End Design</p>
     </footer>
+
+    <script src="../js/alertas.js"></script>
 
 </body>
 
