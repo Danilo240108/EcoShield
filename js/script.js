@@ -1,10 +1,4 @@
-/* 
-   ECOSHIELD — script.js
-*/
 
-/* 
-   1. MENU MOBILE 
- */
 
    var toggle   = document.querySelector('.nav-toggle');
 var navLinks = document.querySelector('.nav-links');
@@ -15,7 +9,7 @@ if (toggle) {
     navLinks.classList.toggle('open');
   });
 
-  /* Fecha o menu ao clicar em qualquer link */
+
   navLinks.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       toggle.classList.remove('open');
@@ -24,9 +18,7 @@ if (toggle) {
   });
 }
 
-/* 
-   2. NAV ATIVO NO SCROLL
- */
+
 var revealObserver = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry, index) {
     if (entry.isIntersecting) {
@@ -42,9 +34,7 @@ document.querySelectorAll('.reveal').forEach(function (el) {
   revealObserver.observe(el);
 });
 
-/*
-   5. CONTADOR DE ALERTAS DINÂMICO NA NAV
- */
+
   var alertValues  = [3, 4, 2, 5, 3];
 var alertIndex   = 0;
 var navAlertText = document.getElementById('navAlertText');
@@ -56,9 +46,7 @@ setInterval(function () {
   }
 }, 8000);
 
-/*
-   3. CONTADORES ANIMADOS (stat1~stat4)
-*/
+
 var counters = [
   { id: 'stat1', target: 2400 },
   { id: 'stat2', target: 147  },
