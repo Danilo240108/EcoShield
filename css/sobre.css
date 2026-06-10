@@ -1,6 +1,4 @@
-/* ================================================
-   AlertaClima - sobre.css
-   ================================================ */
+
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -25,7 +23,6 @@ body {
   min-height: 100vh;
 }
 
-/* ── NAV ── */
 header {
   position: sticky;
   top: 0;
@@ -53,7 +50,7 @@ nav a {
 
 nav a:hover { color: var(--green); }
 
-/* ── HERO ── */
+
 .hero {
   text-align: center;
   padding: 6rem 2rem 4rem;
@@ -123,7 +120,6 @@ h2 {
 p { color: var(--gray); margin-bottom: 1rem; }
 p strong { color: var(--white); font-weight: 500; }
 
-/* ── CONTENT CARDS ── */
 .content-card {
   background: var(--card);
   border-radius: 10px;
@@ -133,7 +129,7 @@ p strong { color: var(--white); font-weight: 500; }
 
 .content-card p { margin: 0; }
 
-/* ── STAT CARDS ── */
+
 .problem-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -218,7 +214,7 @@ p strong { color: var(--white); font-weight: 500; }
 
 .alert-text { font-size: 0.87rem; color: var(--gray); }
 
-/* ── TECH GRID ── */
+
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -242,7 +238,7 @@ p strong { color: var(--white); font-weight: 500; }
 .tech-name { font-weight: 600; font-size: 0.92rem; color: var(--white); margin-bottom: 0.2rem; }
 .tech-desc { font-size: 0.8rem; color: var(--gray); margin: 0; }
 
-/* ── EQUIPE ── */
+
 .team-block {
   display: flex;
   align-items: center;
@@ -269,7 +265,7 @@ p strong { color: var(--white); font-weight: 500; }
 .team-info .name { font-weight: 600; font-size: 0.95rem; color: var(--white); }
 .team-info .role { font-size: 0.8rem; color: var(--gray); margin-top: 0.15rem; }
 
-/* ── FOOTER ── */
+
 footer {
   text-align: center;
   padding: 2.5rem 2rem;
@@ -281,11 +277,11 @@ footer {
 
 footer strong { color: var(--white); }
 
-/* ── SCROLL REVEAL ── */
+
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ── RESPONSIVO ── */
+
 @media (max-width: 600px) {
   nav { gap: 1.5rem; }
   .dashboard-badge { flex-direction: column; gap: 0.5rem; }
