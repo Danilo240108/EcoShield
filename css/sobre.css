@@ -1,0 +1,293 @@
+/* ================================================
+   AlertaClima - sobre.css
+   ================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:    #0d0d0d;
+  --card:  #1e1e1e;
+  --card2: #2a2a2a;
+  --green: #3aaa35;
+  --white: #ffffff;
+  --gray:  #aaaaaa;
+  --line:  rgba(255,255,255,0.08);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* ── NAV ── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(13,13,13,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav { display: flex; gap: 3rem; }
+
+nav a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: var(--green); }
+
+/* ── HERO ── */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+.hero-underline {
+  width: 60px;
+  height: 3px;
+  background: var(--green);
+  border-radius: 2px;
+  margin: 0 auto 2.5rem;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: var(--gray);
+  max-width: 540px;
+  margin: 0 auto 3rem;
+}
+
+.dashboard-badge {
+  display: inline-flex;
+  gap: 1.5rem;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.badge-item { display: flex; align-items: center; gap: 0.4rem; }
+.badge-dot  { width: 7px; height: 7px; border-radius: 50%; }
+.bd-red  { background: #e05252; }
+.bd-warn { background: #e09a52; }
+.bd-safe { background: var(--green); }
+
+/* ── SECTIONS ── */
+section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: var(--white);
+}
+
+p { color: var(--gray); margin-bottom: 1rem; }
+p strong { color: var(--white); font-weight: 500; }
+
+/* ── CONTENT CARDS ── */
+.content-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.content-card p { margin: 0; }
+
+/* ── STAT CARDS ── */
+.problem-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.5rem 1.25rem;
+}
+
+.stat-card .num {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--green);
+}
+
+.stat-card .num.warn { color: #e09a52; }
+.stat-card .num.safe { color: #52aee0; }
+.stat-card .desc { font-size: 0.82rem; color: var(--gray); margin-top: 0.4rem; }
+
+/* ── QUOTE ── */
+.quote-block {
+  border-left: 3px solid var(--green);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: var(--card);
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-block p { color: var(--white); font-style: italic; margin: 0; }
+.quote-block cite { display: block; margin-top: 0.4rem; font-size: 0.8rem; color: var(--gray); font-style: normal; }
+
+/* ── ALERT PANEL ── */
+.alert-panel {
+  margin-top: 1.5rem;
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.alert-panel-header {
+  padding: 0.9rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.alert-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.15s;
+}
+
+.alert-row:last-child { border-bottom: none; }
+.alert-row:hover { background: var(--card2); }
+
+.alert-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
+  min-width: 82px;
+  text-align: center;
+}
+
+.level-critico  { background: rgba(224,82,82,0.18);  color: #e05252; border: 1px solid rgba(224,82,82,0.35); }
+.level-alto     { background: rgba(224,154,82,0.18); color: #e09a52; border: 1px solid rgba(224,154,82,0.35); }
+.level-moderado { background: rgba(224,210,82,0.15); color: #d4c43a; border: 1px solid rgba(224,210,82,0.3); }
+.level-baixo    { background: rgba(58,170,53,0.15);  color: var(--green); border: 1px solid rgba(58,170,53,0.3); }
+
+.alert-text { font-size: 0.87rem; color: var(--gray); }
+
+/* ── TECH GRID ── */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tech-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: background 0.15s, transform 0.2s;
+}
+
+.tech-card:hover { background: var(--card2); transform: translateY(-2px); }
+
+.tech-icon { font-size: 1.5rem; line-height: 1; flex-shrink: 0; }
+.tech-name { font-weight: 600; font-size: 0.92rem; color: var(--white); margin-bottom: 0.2rem; }
+.tech-desc { font-size: 0.8rem; color: var(--gray); margin: 0; }
+
+/* ── EQUIPE ── */
+.team-block {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.team-avatar {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.team-info .name { font-weight: 600; font-size: 0.95rem; color: var(--white); }
+.team-info .role { font-size: 0.8rem; color: var(--gray); margin-top: 0.15rem; }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-top: 2rem;
+}
+
+footer strong { color: var(--white); }
+
+/* ── SCROLL REVEAL ── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVO ── */
+@media (max-width: 600px) {
+  nav { gap: 1.5rem; }
+  .dashboard-badge { flex-direction: column; gap: 0.5rem; }
+  .team-block { flex-direction: column; text-align: center; }
+}
