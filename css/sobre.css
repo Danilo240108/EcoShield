@@ -1,10 +1,12 @@
+
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --bg:    #0d0d0d;
   --card:  #1e1e1e;
   --card2: #2a2a2a;
-  --green: #78ef78;
+  --green: #3aaa35;
   --white: #ffffff;
   --gray:  #aaaaaa;
   --line:  rgba(255,255,255,0.08);
@@ -33,54 +35,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* permite posicionar o logo com absolute */
 }
 
-.logo {
-  position: absolute;
-  left: 2rem;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--green);
-  letter-spacing: 0.04em;
+nav { display: flex; gap: 3rem; }
+
+nav a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
 }
 
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li{
-    list-style: none;
-}
-nav a{
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--white);
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-}
-
-nav a:hover{
-    color: var(--green);
-    border-bottom: 2px solid var(--green);
-}
+nav a:hover { color: var(--green); }
 
 
 .hero {
@@ -126,7 +94,7 @@ nav a:hover{
 .bd-warn { background: #e09a52; }
 .bd-safe { background: var(--green); }
 
-
+/* ── SECTIONS ── */
 section {
   max-width: 860px;
   margin: 0 auto;
@@ -318,6 +286,4 @@ footer strong { color: var(--white); }
   nav { gap: 1.5rem; }
   .dashboard-badge { flex-direction: column; gap: 0.5rem; }
   .team-block { flex-direction: column; text-align: center; }
-  .logo { position: static; margin-bottom: 0.5rem; }
-  header { flex-direction: column; height: auto; padding: 1rem 2rem; }
 }
