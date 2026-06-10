@@ -218,7 +218,109 @@
   </footer>
 </body>
 </html>
-EOF
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre o Projeto – AlertaClima</title>
+</head>
+<body>
+  <header>
+    <div class="logo">AlertaClima</div>
+    <nav>
+      <a href="#proposito">Propósito</a>
+      <a href="#problema">Problema</a>
+      <a href="#motivacao">Motivação</a>
+      <a href="#tecnologias">Tecnologias</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p>⚠ Projeto Acadêmico · Sobre o Sistema</p>
+    <h1>Sistema de Alerta para <span>Desastres Climáticos</span></h1>
+    <p>Uma plataforma de monitoramento e notificação em tempo real para proteger comunidades vulneráveis frente a eventos climáticos extremos.</p>
+    <div class="dashboard-badge">
+      <span>🔴 Nível Crítico</span>
+      <span>🟠 Nível Alto</span>
+      <span>🟢 Monitoramento Ativo</span>
+    </div>
+  </section>
+
+  <section id="proposito">
+    <h3>Propósito do Projeto</h3>
+    <h2>O que é o AlertaClima?</h2>
+    <p>O <strong>AlertaClima</strong> é uma plataforma digital de monitoramento e alerta precoce voltada para a prevenção de desastres climáticos. O sistema coleta dados de sensores meteorológicos, satélites e fontes governamentais, processa essas informações em tempo real e emite notificações classificadas por nível de risco para autoridades e populações em risco.</p>
+    <p>A página que você está visualizando é a seção <strong>"Sobre"</strong> do projeto, que apresenta o contexto, a justificativa, as escolhas tecnológicas e a equipe responsável pelo desenvolvimento.</p>
+  </section>
+
+  <section id="problema">
+    <h3>Problema Abordado</h3>
+    <h2>Por que isso é urgente?</h2>
+    <p>O Brasil é um dos países mais afetados por desastres naturais na América Latina. Enchentes, deslizamentos e secas extremas causam perdas humanas e econômicas bilionárias anualmente. A principal falha identificada é a <strong>ausência de alertas precoces acessíveis e padronizados</strong> para populações em áreas de risco.</p>
+    <p>Sistemas existentes são fragmentados, dependentes de infraestrutura cara e raramente chegam às comunidades mais vulneráveis a tempo de permitir evacuação ou proteção adequada.</p>
+    <div class="problem-stats">
+      <div><strong>+900</strong><p>municípios brasileiros em área de risco geológico alto ou muito alto (CEMADEN)</p></div>
+      <div><strong>72h</strong><p>janela média entre previsão e impacto de eventos extremos sem alertas eficazes</p></div>
+      <div><strong>3x</strong><p>redução em mortes quando sistemas de alerta precoce funcionam adequadamente (ONU, 2022)</p></div>
+    </div>
+  </section>
+
+  <section id="motivacao">
+    <h3>Motivação</h3>
+    <h2>Por que desenvolvemos este projeto?</h2>
+    <blockquote>
+      <p>"Nenhuma morte por desastre natural é inevitável — ela é, acima de tudo, uma falha de comunicação e prevenção."</p>
+      <cite>— Inspiração no relatório Early Warnings for All, ONU (2022)</cite>
+    </blockquote>
+    <p>A motivação surge de eventos recentes que impactaram o Brasil: as enchentes no Rio Grande do Sul em 2024, as queimadas históricas de 2023 e os recorrentes deslizamentos na Serra Gaúcha e no litoral norte de São Paulo. Em todos esses casos, populações foram pegas de surpresa ou receberam alertas <strong>tarde demais</strong>.</p>
+    <p>Como estudantes de tecnologia, entendemos que ferramentas digitais bem projetadas podem salvar vidas. Este projeto nasce do compromisso de <strong>transformar dados meteorológicos em ações concretas de proteção civil</strong>, de forma acessível, transparente e escalável.</p>
+    <table border="1">
+      <thead>
+        <tr><th>Nível</th><th>Descrição</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>🔴 Crítico</td><td>Evento iminente com risco de vida. Evacuação imediata recomendada pelas autoridades.</td></tr>
+        <tr><td>🟠 Alto</td><td>Alta probabilidade de ocorrência nas próximas 6h. Abrigos sendo ativados na região.</td></tr>
+        <tr><td>🟡 Moderado</td><td>Condições adversas previstas. Monitoramento intensificado e população em alerta.</td></tr>
+        <tr><td>🟢 Baixo</td><td>Situação sob controle. Monitoramento de rotina ativo sem riscos imediatos identificados.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="tecnologias">
+    <h3>Tecnologias Utilizadas</h3>
+    <h2>Como o sistema é construído?</h2>
+    <p>O AlertaClima é desenvolvido com uma arquitetura moderna, pensada para <strong>escalabilidade, velocidade e baixo custo de operação</strong>, permitindo que municípios menores também possam adotá-lo.</p>
+    <ul>
+      <li><strong>HTML5 / CSS3</strong> — Interface responsiva e acessível para o painel público de alertas.</li>
+      <li><strong>JavaScript (ES6+)</strong> — Atualização em tempo real via WebSockets e consumo de APIs meteorológicas.</li>
+      <li><strong>Leaflet.js</strong> — Mapas interativos com camadas de risco georreferenciadas (INMET e CEMADEN).</li>
+      <li><strong>Node.js + Express</strong> — Back-end para agregar dados e processar regras de classificação de risco.</li>
+      <li><strong>PostgreSQL + PostGIS</strong> — Banco de dados geoespacial para histórico e regiões de risco.</li>
+      <li><strong>API INMET / OpenWeather</strong> — Dados meteorológicos em tempo real para o motor de alertas.</li>
+    </ul>
+  </section>
+
+  <section id="equipe">
+    <h3>Equipe</h3>
+    <h2>Quem está por trás do projeto?</h2>
+    <p>Desenvolvido como projeto acadêmico de conclusão de disciplina, com foco em impacto social real.</p>
+    <p><strong>Equipe AlertaClima</strong> — Desenvolvimento Full Stack · Design de Interface · Análise de Dados Climáticos</p>
+  </section>
+
+  <footer>
+    <p><strong>AlertaClima</strong> · Projeto Acadêmico · 2025</p>
+    <p>Desenvolvido com tecnologia para proteger vidas frente aos desafios climáticos do nosso tempo.</p>
+  </footer>
+</body>
+</html>
+
+
+
 
 
 
