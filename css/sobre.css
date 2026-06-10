@@ -1,5 +1,3 @@
-
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -35,9 +33,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative; /* permite posicionar o logo com absolute */
 }
 
-nav { display: flex; gap: 3rem; }
+.logo {
+  position: absolute;
+  left: 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--green);
+  letter-spacing: 0.04em;
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+}
 
 nav a {
   font-size: 0.9rem;
@@ -286,4 +297,6 @@ footer strong { color: var(--white); }
   nav { gap: 1.5rem; }
   .dashboard-badge { flex-direction: column; gap: 0.5rem; }
   .team-block { flex-direction: column; text-align: center; }
+  .logo { position: static; margin-bottom: 0.5rem; }
+  header { flex-direction: column; height: auto; padding: 1rem 2rem; }
 }
